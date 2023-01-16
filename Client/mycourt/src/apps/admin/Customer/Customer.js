@@ -1,0 +1,67 @@
+import { React, useState, useEffect } from 'react'
+import { getAllClient, deleteUser } from '../../../Service/adminService'
+import Adminnav from '../../public/Admin/Adminnav';
+// import styles from "../Casemaster/Casemaster";
+import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+
+function Lawyer() {
+    const navigate = useNavigate();
+    const params = useParams();
+    const id = params.id;
+
+    const [Lawyer, setLawyer] = useState([]);
+    
+    useEffect(() => {
+        getAllClient().then((lawyers) => {
+            setLawyer(lawyers.data)
+           
+        })
+    }, [])
+
+    const getRow = (lawyers, index) => {
+        return (
+            <tr key={index}>
+                <td>{lawyers.name}</td>
+                <td>{lawyers.email}</td>
+                <td>{lawyers.phone}</td>
+                <td>{lawyers.address}</td>
+                <td>{lawyers.dob}</td>
+                <td> <button onClick={(e) => deleteuser(lawyers.id, e)}  className='btn btn-secondary'>Delete</button></td>
+            </tr>
+        )
+    }
+    function deleteuser(lawyersId, e)  {
+        if (!window.confirm('Are you sure you want to delete ?')) {
+            return;
+        }
+        deleteUser(lawyersId, e);
+        var row = document.getElementById(id);
+        row.remove();
+    }
+    return (
+        <>
+         <Adminnav/>
+            <div className='container'>
+                <div className='text-center'><h1> Clients</h1></div>
+                <div className='con'>
+                <table className='table'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>Dob</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {Lawyer.map(getRow)}
+                    </tbody>
+                </table>
+            </div></div>
+        </>
+    )
+}
+export default Lawyer

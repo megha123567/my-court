@@ -1,0 +1,171 @@
+
+
+.homeData {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#homeButton {
+    background-color: burlywood;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 525px;
+    font-weight: bolder;
+}
+#homeButton:hover{
+    background-color: rgb(79, 59, 30);
+}
+
+.text {
+
+    margin-left: 40px;
+
+}
+.navbar,.homeData, #homeButton{
+    position: relative;
+    z-index: 999;
+
+}
+.navbar-brand {
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    transition: none;
+}
+
+
+
+.text {
+    margin-left: 0px;
+    color: aliceblue;
+}
+
+.loginButton {
+    background-color: burlywood;
+    font-weight: bolder;
+    color: white;
+}
+
+.regLink {
+    color: white;
+    font-weight: bolder;
+}
+
+.hi {
+    margin: auto;
+   
+}
+
+.home1 {
+  
+    background-color: rgb(79, 59, 30);
+    height: 100vh;
+    position: relative;
+    
+  
+}
+.img{
+    height:100vh;
+    width: 100vw;
+}
+
+.home2 {
+    background-image: url('https://images.pexels.com/photos/6077447/pexels-photo-6077447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shadow{
+    background-color: burlywood; 
+}
+#btnLogin{
+    background-color: burlywood;
+    color: rgb(255, 255, 255);
+}
+#btnLogin:hover{
+    background-color: rgb(79, 59, 30);
+}
+
+.carausal, .humm{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+ .homeData {
+    z-index: 99;
+}
+
+/* about  */
+.home3{
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.323);
+    
+}
+#h{
+    width: 350px; 
+    margin-left: -205px;
+}
+#aboutImg{
+    height: 450px;
+    width: 400px; 
+}
+#space{
+    height: 450px;
+    width: 400px;
+}
+.space{
+    margin-top: 0px;
+}
+  /* feature */
+
+.home4{
+    height: 100vh;
+}
+
+.image{
+    position:relative;
+    object-fit: cover;
+    height: 630px;
+    width: 100%;
+    margin-top: -60px;
+  
+}
+#main{
+  
+    position: absolute;
+    margin-top: -100px;
+}
+#border{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    
+}
+#box{
+    margin-top: -100px;
+    position: absolute;
+    margin-left: 500px;
+   
+}
+#us{
+    color: burlywood;
+}
+#ok{
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.con{
+    width: 60%;
+    position: absolute;
+    top:20%;
+    left:30%;
+    padding: 20px 20px;
+    
+    
+    
+}
+.table{
+    background-color: rgba(242, 248, 250, 0.536);
+    border: 1px solid rgb(209, 209, 223);
+}
+.imgedit{
+    width: 15%;
+}
+.imgdlt{
+    width: 45%;
+}
+td{
+    width: 20%;
+}
+thead{
+    background-color: rgba(0, 0, 0, 0.737);
+    color: white;
+}

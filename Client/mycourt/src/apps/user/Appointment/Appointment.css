@@ -1,0 +1,100 @@
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    height: 550px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+ 
+}
+.hello{
+    width: 40vw;
+    height: 500px;
+    background-color: rgba(99, 26, 26, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+.child{
+    width: 35vw;
+    height: 450px;
+    background-color:rgba(222, 184, 135, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+   margin: auto;
+   
+}
+#from{
+    width:300px;
+    font-weight: bolder;
+}
+form input{
+    height: 35px;
+}
+.home{
+    background-image: url('https://images.pexels.com/photos/6077447/pexels-photo-6077447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#t{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#kl {
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(22, 31, 21);
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #000000;
+    background-image: linear-gradient(45deg, rgb(99, 81, 59) 0%, rgb(222, 184, 135)  51%,rgb(99, 81, 59) 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+   
+  
+ #kl:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+   
+  
+ #kl:active {
+    transform: scale(0.95);
+  }
+#dob{
+    margin-left: 10px;
+}
+  #phone{
+margin-right: 20px;
+margin-left: 10px;
+  }
